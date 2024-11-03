@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 
 const courses = [
@@ -28,13 +28,13 @@ const courses = [
     id: 4,
     title: 'Data Structures and Algorithms',
     description: 'Understand fundamental data structures and algorithms for efficient programming.',
-    image: 'https://www.interviewbit.com/blog/wp-content/uploads/2022/03/Best-Data-Structures-and-Algorithms-Courses-800x391.png' 
- },
+    image: 'https://www.interviewbit.com/blog/wp-content/uploads/2022/03/Best-Data-Structures-and-Algorithms-Courses-800x391.png'
+  },
   {
     id: 5,
     title: 'Introduction to Node.js',
     description: 'Learn the basics of server-side programming with Node.js.',
-    image:  'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/xFGq8AjYTIi7QUnNpAhK',
+    image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/xFGq8AjYTIi7QUnNpAhK',
   },
   {
     id: 6,
@@ -47,37 +47,37 @@ const courses = [
     title: 'React Native for Mobile Development',
     description: 'Build mobile applications using React Native for iOS and Android.',
     image: 'https://dicecamp-testing.fra1.cdn.digitaloceanspaces.com/4949/React-Native-Banner.jpg'
-},
-{
+  },
+  {
     id: 8,
     title: 'Introduction to Python',
     description: 'Learn the fundamentals of Python programming, including data types and control flow.',
     image: 'https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/04/Introduction-To-Python-1.jpg'
-},
-{
+  },
+  {
     id: 9,
     title: 'Machine Learning Basics',
     description: 'Discover the basics of machine learning and how to implement algorithms.',
     image: 'https://i.ytimg.com/vi/hmOiINgO6tA/maxresdefault.jpg'
-},
-{
+  },
+  {
     id: 10,
     title: 'Introduction to TypeScript',
     description: 'Learn how to build scalable and maintainable applications using TypeScript.',
     image: 'https://media.geeksforgeeks.org/wp-content/uploads/20240704122318/Typescript-Tutorial-copy.webp'
-},
-{
+  },
+  {
     id: 11,
     title: 'API Development with Express.js',
     description: 'Create robust APIs using Express.js for Node.js applications.',
     image: 'https://i0.wp.com/blog.apilayer.com/wp-content/uploads/2023/08/RESTful-Web-API-Design-A-Comprehensive-Guide.jpg?resize=1140%2C628&ssl=1'
-},
-{
+  },
+  {
     id: 12,
     title: 'Building Progressive Web Apps',
     description: 'Learn how to create fast, reliable, and engaging PWAs using modern web technologies.',
     image: 'https://www.metizsoft.com/wp-content/uploads/2021/03/top-progressive-web-apps-frameworks-2-1200x675.jpg'
-}
+  }
 ];
 
 const CourseList = () => {
@@ -91,7 +91,7 @@ const CourseList = () => {
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '20px',
         flex: 1,
-        position: 'relative', 
+        position: 'relative',
       }}>
         {courses.map(course => (
           <div
@@ -104,7 +104,7 @@ const CourseList = () => {
               backgroundColor: '#f9f9f9',
               boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
               cursor: 'pointer',
-              transition: 'transform 0.2s', 
+              transition: 'transform 0.2s',
             }}
             onMouseEnter={() => setHoveredCourse(course.id)}
             onMouseLeave={() => setHoveredCourse(null)}
@@ -130,12 +130,12 @@ const CourseList = () => {
               Enroll Now
             </button>
 
-            {/* Hovered Description */}
             {hoveredCourse === course.id && (
               <div style={{
                 position: 'absolute',
-                top: 0,
-                left: '100%', 
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
                 width: '250px',
                 border: '1px solid #ccc',
                 borderRadius: '5px',
@@ -149,6 +149,7 @@ const CourseList = () => {
                 <p style={{ fontWeight: 'bold' }}>{course.price}</p>
               </div>
             )}
+
           </div>
         ))}
       </div>
