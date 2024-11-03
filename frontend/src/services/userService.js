@@ -11,7 +11,7 @@ export const signup = async (data) => {
         body: JSON.stringify(data),
     });
 
-    const json = await response.json(); // This line expects a JSON response
+    const json = await response.json(); 
     return json;
 };
 

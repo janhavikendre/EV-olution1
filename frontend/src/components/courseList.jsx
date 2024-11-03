@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for routing
+import { useNavigate } from "react-router-dom"; 
 
 
 const courses = [
@@ -91,7 +91,7 @@ const CourseList = () => {
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '20px',
         flex: 1,
-        position: 'relative', // Set relative positioning for absolute positioning of description
+        position: 'relative', 
       }}>
         {courses.map(course => (
           <div
@@ -104,7 +104,7 @@ const CourseList = () => {
               backgroundColor: '#f9f9f9',
               boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
               cursor: 'pointer',
-              transition: 'transform 0.2s', // Add transition for hover effect
+              transition: 'transform 0.2s', 
             }}
             onMouseEnter={() => setHoveredCourse(course.id)}
             onMouseLeave={() => setHoveredCourse(null)}
@@ -135,7 +135,7 @@ const CourseList = () => {
               <div style={{
                 position: 'absolute',
                 top: 0,
-                left: '100%', // Position to the right of the course card
+                left: '100%', 
                 width: '250px',
                 border: '1px solid #ccc',
                 borderRadius: '5px',

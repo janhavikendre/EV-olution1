@@ -29,7 +29,7 @@ const NavBar = () => {
               <img 
                 src="https://t3.ftcdn.net/jpg/03/21/37/28/360_F_321372809_PCIIUuYKpRwPVuYf45SDSxrjC4z379kN.jpg" 
                 alt="Logo"
-                style={{ width: "70px", height: "70px", borderRadius: "50%", marginRight: "0px" }} // Adjust size as needed
+                style={{ width: "70px", height: "70px", borderRadius: "50%", marginRight: "0px" }} 
               />
               <span style={{ fontWeight: "bold", fontSize: "24px" }}>EV-olution</span>
             </div>

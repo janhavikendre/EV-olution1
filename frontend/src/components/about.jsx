@@ -58,10 +58,10 @@ const About = () => {
 
 const styles = {
     footer: {
-        backgroundColor: '#000',  // Black background
+        backgroundColor: '#000',  
         padding: '40px 20px',
         borderTop: '1px solid #333',
-        color: 'white',  // White text color for contrast
+        color: 'white',  
     },
     container: {
         textAlign: 'center',
@@ -69,7 +69,7 @@ const styles = {
     },
     heading: {
         fontSize: '20px',
-        color: '#E88982',  // Light color for the heading
+        color: '#E88982',  
         marginBottom: '20px',
     },
     companyLogos: {
@@ -93,7 +93,7 @@ const styles = {
         alignItems: 'flex-start',
     },
     linkHeading: {
-        color: '#fff',  // White text for headings
+        color: '#fff',  
         marginBottom: '10px',
     },
     linkList: {
@@ -101,7 +101,7 @@ const styles = {
         padding: 0,
     },
     link: {
-        color: '#ccc',  // Light grey links for readability on black background
+        color: '#ccc',  
         textDecoration: 'none',
         marginBottom: '10px',
         fontSize: '14px',
@@ -112,7 +112,7 @@ const styles = {
     },
     copyright: {
         textAlign: 'center',
-        color: '#999',  // Light grey for copyright
+        color: '#999',  
         fontSize: '12px',
     },
 };
